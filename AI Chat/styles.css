@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* run commmand "npx tailwindcss build styles.css -o output.css" after any changes to this file */
+
+#box{
+    position: relative;
+    height: 400px; 
+    overflow: auto;
+  }
+  
+  div {
+    margin-bottom: 50px; 
+  }
+
+  #ChatWindow {
+    position: sticky;
+    bottom: 0;
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #msg-inpt {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  #btn {
+    white-space: nowrap;
+  }

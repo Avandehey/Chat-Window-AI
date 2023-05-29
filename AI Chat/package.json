@@ -1,0 +1,28 @@
+{
+  "name": "ai-chat",
+  "version": "1.0.0",
+  "description": "a website that will allow you to chat with your favorite character from a movie or show",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run bundle && npm-run-all --parallel watch serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "serve": "cd dist && live-server",
+    "bundle": "webpack"
+  },
+  "author": "Alec Vandehey",
+  "license": "MIT",
+  "dependencies": {
+    "@types/uuid": "^9.0.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.0.4",
+    "uuid": "^9.0.0",
+    "webpack": "^5.84.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.1"
+  }
+}
